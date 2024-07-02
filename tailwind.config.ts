@@ -24,7 +24,12 @@ const config: Config = {
       },
       backgroundColor: {
         "bindi-color": "#08D3BB",
-        "footer_background":"#E8F4FA"
+        "footer_background":"#E8F4FA",
+        "webapp":"#EFEAFF",
+        "seo":'#ECFFDA',
+        "arvr":"#DAE6FF",
+        "mobileapp":"#FFE5DA",
+        "button_color":"#E7EFF3"
         
       }
     },

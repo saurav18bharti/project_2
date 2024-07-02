@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    },
+    {
+        "id": 2,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-81342https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    },
+    {
+        "id": 3,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-81342https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-81342https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    }   ,
+    {
+        "id": 4,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    },
+    {
+        "id": 5,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    },
+    {
+        "id": 6,
+        "title": "Lorem Ipsum is simply dummy text of the printing.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+        "img1":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-81342https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "img2":"https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-81342https://cdn.pixabay.com/photo/2023/07/18/07/17/pineapple-8134236_1280.jpg",
+        "name":"John Doe",
+        "date":"21.01.2022"
+    }
+
+]
