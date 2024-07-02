@@ -191,7 +191,7 @@ const Home = () => {
                 <div className="">
                   <div className="flex flex-col gap-12">
                     <div className="flex items-center gap-4">
-
+                    {/* <Image width={55} height={10} src={item.image1} alt="image" className="p-4 rounded-full shadow-lg" /> */}
                     <Image width={55} height={10} src={item.image2} alt="image" className="p-4 rounded-full shadow-lg" />
                     <div className="flex flex-col gap-2">
                       <h1 className="text-xl font-medium">Lorem Ipsum is simply dummy text</h1>
