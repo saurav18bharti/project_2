@@ -15,3 +15,6 @@
 .app-content {
   @apply max-w-screen-xl mx-auto;
 }
+.app-content2{
+  @apply max-w-screen-2xl mx-auto;
+}

@@ -57,6 +57,7 @@ const Blog = () => {
           })}
         </div>
       </div>
+      
 
       <div className="flex  items-center gap-20 px-40">
         <Image
@@ -97,7 +98,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-10 p-40 ">
+      <div className="grid grid-cols-3 gap-10 p-40 ">
         {data.map((item, index) => (
           <div key={index} className="w-fit flex flex-col gap-10 ">
             <Image
@@ -105,7 +106,7 @@ const Blog = () => {
               alt="image"
               width={400}
               height={400}
-              className="rounded-3xl"
+              className="rounded-3xl w-full"
             />
 
             <h1 className="text-2xl font-bold ">{item.title}</h1>
