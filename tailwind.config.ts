@@ -19,7 +19,9 @@ const config: Config = {
       },
       colors: {
         "blue-color": "#1090CB",
-        "footer_text_grey_color":"#515151"
+        "footer_text_grey_color":"#777777",
+        "about_text_color":"#2E0D64",
+        "about_text_grey_color":"#585858"
       
       },
       backgroundColor: {
@@ -29,7 +31,11 @@ const config: Config = {
         "seo":'#ECFFDA',
         "arvr":"#DAE6FF",
         "mobileapp":"#FFE5DA",
-        "button_color":"#E7EFF3"
+        "button_color":"#E7EFF3",
+        "services_bg_color":"#D2D2D2",
+        "services_seo":"#E2F3FF",
+        "services_arvr":"#FFE7FB",
+        "women_bg_color":"#F5F3DA"
         
       }
     },

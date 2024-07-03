@@ -22,7 +22,7 @@ const Header = () => {
       <ul className='justify-center items-center gap-12 font-medium hidden lg:flex'>
         {
           route.map(({name,path})=>{
-            return <Link href={path} key={path}><li className='relative' >{name} { pathname === path ? <p className='absolute bg-bindi-color w-2 h-2 top-[-4px] left-[-4px] rounded-md'></p>:""}</li></Link>
+            return <Link href={path} key={path}><li className={`relative ${pathname === path ? 'text-blue-color' : ''}`} >{name} { pathname === path ? <p className='absolute bg-bindi-color w-2 h-2 top-[-4px] left-[-4px] rounded-md'></p>:""}</li></Link>
           })
 
 
@@ -32,7 +32,7 @@ const Header = () => {
 
      
       </ul>
-      <button className='bg-blue-color text-white py-3 px-6 rounded-md'>Contact us</button>
+     <Link href={'/contact'}><button className={`bg-blue-color text-white py-3 px-6 rounded-md hover:text-black ${pathname === '/contact' ? 'text-white font-bold' : ''}`}>Contact us</button></Link> 
       </div>
     </div>
   )
