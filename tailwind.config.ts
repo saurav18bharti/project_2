@@ -35,7 +35,12 @@ const config: Config = {
         "services_bg_color":"#D2D2D2",
         "services_seo":"#E2F3FF",
         "services_arvr":"#FFE7FB",
-        "women_bg_color":"#F5F3DA"
+        "women_bg_color":"#F5F3DA",
+        "home_first_emoji_color":"#08D3BB",
+        "home_second_emoji_color":"#1090CB",
+        "home_third_emoji_color":"#9208D3",
+        "home_first_square_bg_color":"#F4F4F4",
+       
         
       }
     },

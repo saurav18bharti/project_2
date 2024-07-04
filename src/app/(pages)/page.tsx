@@ -1,8 +1,8 @@
 import React from "react";
-import bigplant from "@/app/assests/bigplant.png";
-import cuboid from "@/app/assests/cuboid.png";
+import bigplant from "@/app/assests/bigplant.svg";
+import cuboid from "@/app/assests/cuboid.svg";
 import sittingman from "@/app/assests/sittingman.png";
-import smallplant from "@/app/assests/smallplant.png";
+import smallplant from "@/app/assests/smallplant.svg";
 import vectorblue from "@/app/assests/vectorblue.png";
 import websitecontent from "@/app/assests/websitecontent.png";
 import seotag from "@/app/assests/seotag.png";
@@ -20,10 +20,10 @@ import bell from "@/app/assests/bell.png";
 import vectorline from "@/app/assests/vectorline.png";
 
 import Image from "next/image";
-import { title } from "process";
+import { BsEmojiSmile } from "react-icons/bs";
 
 const Home = () => {
-  var data = [
+  const data = [
     {
       image: websitecontent,
       title: "Web Application",
@@ -51,7 +51,7 @@ const Home = () => {
   ];
 
 
-  var data2 = [
+  const data2 = [
    
     {
       subtopic: "Lorem Ipsum is simply dummy text",
@@ -59,7 +59,8 @@ const Home = () => {
       image1: mobile,
       image2: sittingman,
       title: "Lorem Ipsum is simply dummy text of the printing. ",
-      desc:"KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+      desc:"KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. ",
+      color:"bg-home_first_emoji_color"
     },
  
     {
@@ -68,7 +69,8 @@ const Home = () => {
       image1: daisy,
       image2: sittingman,
       title: "Lorem Ipsum is simply dummy text of the printing. ",
-      desc:"KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+      desc:"KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. ",
+      color:"bg-home_second_emoji_color"
     },
  
     {
@@ -78,6 +80,8 @@ const Home = () => {
       image2: sittingman,
       title: "Lorem Ipsum is simply dummy <br/> text of the printing. ",
       desc:"KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+      ,
+      color:"bg-home_third_emoji_color"
     },
  
    
@@ -96,30 +100,30 @@ const Home = () => {
 
   return (
     <div className="home_main_container">
-      <div className=" bg-footer_background flex  justify-around items-center pl-32 pb-12">
-        <div className="flex flex-1 flex-col gap-10">
+      <div className=" bg-footer_background flex md:flex-col lg:flex-row  justify-around items-center lg:pl-32 md:pl-0 pb-12">
+        <div className="flex md:justify-center md:items-center lg:justify-normal lg:items-baseline md:p-8 lg:p-0 flex-1 flex-col gap-10">
           <h1 className="text-5xl font-semibold leading-normal">
             Experienced <span className="text-blue-color">mobile and web </span>{" "}
             <br />
             applications and website <br />
             builders measuring.
           </h1>
-          <h5 className="text-footer_text_grey_color text-xl leading-loose">
+          <h5 className="text-footer_text_grey_color text-lg leading-loose">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web{" "}
             <br /> applications and website builders measuring dozens of
             completed projects. <br /> We build and develop mobile applications
             for several top platforms, <br /> including Android & IOS.{" "}
           </h5>
           <div className="flex gap-4 ">
-            <button className="py-4 px-16 bg-blue-color text-white rounded-xl text-xl font-normal">
+            <button className="py-4 px-16 bg-blue-color text-white rounded-lg text-xl font-normal">
               Contact us
             </button>
-            <button className="py-4 px-16 bg-white text-blue-color rounded-xl border border-blue-color text-xl">
+            <button className="py-4 px-16 bg-white text-blue-color rounded-lg border border-blue-color text-xl">
               View more
             </button>
           </div>
         </div>
-        <div className="flex flex-1 relative">
+        <div className="flex flex-1 relative md:w-full lg:w-0">
           <Image
             width={150}
             height={500}
@@ -137,11 +141,14 @@ const Home = () => {
             alt="smallplant"
             className="w-[10%] h-fit absolute top-[18rem]"
           />
+          <div className="">
+
           <Image
             src={sittingman}
             alt="sittingman"
-            className="w-[40rem] h-[60rem]"
+            className="md:w-full lg:w-[40rem] h-[60rem] "
           />
+          </div>
           <Image
             width={100}
             src={bigplant}
@@ -150,19 +157,19 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex items-center py-10 gap-20 justify-center relative border-b-2 border-gray-300">
+      <div className="flex md:grid md:grid-cols-2 md:place-items-center lg:flex md:p-12 lg:grid-cols-none lg:flex-row items-center py-10 gap-20 justify-center relative border-b-2 border-gray-300">
         <Image
           src={vectorgreen}
           alt="websitecontent"
-          className="absolute bottom-0 left-0"
+          className="absolute md:bottom-[312px] lg:bottom-0 left-0"
         />
         {data.map((item, i) => {
           return (
-            <div key={i} className="flex justify-center items-center gap-8">
-              <div className={`${item.color} p-7 rounded-3xl`}>
+            <div key={i} className="flex md:flex-col lg:flex-row justify-center items-center gap-8">
+              <div className={`${item.color} md:p-5 lg:p-7 rounded-3xl`}>
                 <Image src={item.image} alt="image" />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col md:justify-center md:items-center lg:justify-normal lg:items-center gap-2">
                 <h1 className="font-medium text-xl">{item.title}</h1>
                 <p className="text-gray-400">{item.desc}</p>
               </div>
@@ -170,8 +177,8 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="p-24 text-center">
-        <h1 className="text-4xl font-semibold py-9 opacity-80">
+      <div className="md:p-12 md:mb-20 lg:p-24 text-start">
+        <h1 className="text-4xl font-semibold py-9 opacity-90">
           Lorem ipsum dolor sit amet consectetur adipisicing.
         </h1>
         <h4 className="text-xl text-gray-400  font-normal leading-relaxed">
@@ -179,31 +186,34 @@ const Home = () => {
           industry. <br /> Lorem Ipsum has been the industry
         </h4>
       </div>
-      <div className="relative app-content">
-        <Image src={vectorline} alt="vectorgreen" className="absolute top-[6rem] left-[11.8rem]" />
+      <div className="relative max-w-[1443px] mx-auto">
+        <Image src={vectorline} alt="vectorgreen" className="absolute top-[6rem] left-[11.8rem] hidden" />
         {
           data2.map((item, i) => {
             return(
               <>
-              <div className="flex  gap-20  items-center  pb-40 justify-between ">
-              {i%2 !==0 && <Image src={item.image1} alt="image" className=" " /> }
+              <div className={`flex ${i%2 !==0 && 'lg:flex-row-reverse md:flex-col'}  md:flex-col lg:flex-row   md:gap-4 lg:gap-20  items-center  md:pb-28 lg:pb-40 justify-between `}>
              
-                <div className="">
-                  <div className="flex flex-col gap-12">
+                <div className=" md:px-12 lg:max-w-[600px]">
+                  <div className="flex flex-col md:gap-6 lg:gap-12">
                     <div className="flex items-center gap-4">
-                    <Image width={55} height={10} src={item.image2} alt="image" className="p-4 rounded-full shadow-lg" />
+                      <div className={`p-6 rounded-full shadow-lg ${item.color}`}>
+
+                    <BsEmojiSmile className="text-2xl text-white" />
+                      </div>
+                    <p></p>
                     <div className="flex flex-col gap-2">
                       <h1 className="text-xl font-medium">Lorem Ipsum is simply dummy text</h1>
                       <h3 className="text-gray-400">Lorem Ipsum is simply dummy text</h3>
                     </div>
                     </div>
-                    <div className="flex flex-col gap-14">
-                      <p className="text-4xl font-semibold"> <span className="text-blue-color leading-loose ">Lorem Ipsum</span> is simply dummy <br/> text of the printing.</p>
-                      <h4 className="text-footer_text_grey_color text-xl leading-relaxed">KODEX TECHNOLOGY (PVT) LTD is a team of experienced <br/> mobile and web applications and website builders <br/> measuring dozens of completed projects. We build and <br/> develop mobile applications for several top platforms, <br/> including Android  & IOS.</h4>
+                    <div className="flex flex-col md:gap-10 lg:gap-14">
+                      <p className="text-3xl font-semibold"> <span className="text-blue-color leading-loose ">Lorem Ipsum</span> is simply dummy  text of the printing.</p>
+                      <h4 className="text-footer_text_grey_color text-lg leading-relaxed">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders  measuring dozens of completed projects. We build and develop mobile applications for several top platforms,  including Android  & IOS.</h4>
                     </div>
                   </div>
                 </div>
-                {i%2 ===0 && <Image src={item.image1} alt="image" className="  " /> } 
+                 <Image src={item.image1} alt="image" className="  " /> 
               
               </div>
               </>
@@ -211,17 +221,17 @@ const Home = () => {
           })
         }
     
-      <div className="flex justify-center items-center gap-20 py-12 ">
+      <div className="flex md:flex-col lg:flex-row justify-center items-center gap-20 lg:py-12 md:px-12 ">
         {
           data3.map((item, i) => { 
             return(
               <>
-              <div className={`relative flex flex-1 flex-col gap-12 p-16 justify-center items-center ${ i%2 !==0 ? "bg-blue-color" : "bg-gray-300"} rounded-2xl`}>
+              <div className={`relative flex  flex-1 flex-col gap-12 p-16 justify-center items-center ${ i%2 !==0 ? "bg-blue-color" : "bg-home_first_square_bg_color"} rounded-2xl`}>
 
                 {i%2 !==0 ? <Image src={bell} alt="image" className="absolute top-[-5rem] right-[2rem]" /> : ""}
-                <h1 className={` ${ i%2 !==0 ? "text-white" : "text-black"} text-3xl font-semibold text-center w-[78%]`}>{item.title}</h1>
-                <h3 className={`${ i%2 !==0 ? "text-white" : "text-footer_text_grey_color"} text-xl leading-relaxed text-center  `}>{item.desc}</h3>
-                <button className={`py-4 px-10 rounded-lg ${ i%2 !==0 ? "bg-white text-blue-color" : "bg-blue-color text-white"} text-xl w-fit`}>View More</button>
+                <h1 className={` ${ i%2 !==0 ? "text-white" : "text-black"} text-3xl opacity-85 font-semibold text-center w-[78%]`}>{item.title}</h1>
+                <h3 className={`${ i%2 !==0 ? "text-white" : "text-footer_text_grey_color"} text-lg leading-relaxed text-center  `}>{item.desc}</h3>
+                <button className={`py-4 px-10 rounded-lg ${ i%2 !==0 ? "bg-white text-blue-color" : "bg-blue-color text-white"} text-lg w-fit`}>View More</button>
               </div>
               </>
             )
@@ -233,7 +243,7 @@ const Home = () => {
 
       <div className="py-40">
         <h1 className="text-center text-3xl font-medium">You will be in good Company</h1>
-        <div className="flex justify-between items-center gap-20 py-6">
+        <div className="flex flex-wrap md:grid md:grid-cols-2 md:place-items-center lg:flex lg:flex-row justify-between items-center lg:gap-20 md:gap-0 py-6">
           <Image src={beneoshop} alt="sittingman" />
           <Image src={caspio} alt="sittingman" />
           <Image src={hypergrid} alt="sittingman" />

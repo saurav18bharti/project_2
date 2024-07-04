@@ -37,7 +37,7 @@ const page = () => {
   return (
     <div>
 
-    <div className='flex flex-col justify-center items-center bg-footer_background relative pb-[16rem]'>
+    <div className='flex flex-col justify-center items-center bg-footer_background relative md:pb-[27rem] lg:pb-[16rem]'>
         <div className='flex flex-col items-center justify-center gap-8 pt-20 '>
      
             <div className='bg-white p-8 rounded-full'>
@@ -48,16 +48,16 @@ const page = () => {
             <p className='max-w-[390px] text-center text-footer_text_grey_color text-lg leading-loose '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys</p>
 
         </div>
-    <div className='absolute bottom-[-231px]'>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20  place-items-center  bg-white py-20 px-36 rounded-xl relative shadow-2xl  shadow-slate-200 ">
+    <div className=' absolute md:bottom-[-440px] lg:bottom-[-231px] md:p-8 lg:p-0 '>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20  place-items-center  bg-white py-20 md:px-12 lg:px-36 rounded-xl relative shadow-2xl  shadow-slate-200  ">
             <Image src='/services/smallplant.jpg' alt="web" width={130} height={300} className='absolute rounded-full top-[-4rem] right-[4rem] mix-blend-darken' />
         {data.map((item, i) => (
-          <div key={i} className={`flex justify-between items-center gap-8 max-w-[512px] px-10 `}>
+          <div key={i} className={`flex md:flex-col lg:flex-row justify-between items-center gap-8 max-w-[512px] px-10 `}>
             <div className={`${item.color} p-7 rounded-3xl`}>
               <Image src={item.image} alt={item.title} width={60} height={100} />
             </div>
-            <div className="flex flex-col gap-2">
-              <h1 className="font-medium text-2xl">{item.title}</h1>
+            <div className="flex flex-col  gap-2 md:pl-4 lg:pl-0">
+              <h1 className="font-medium text-2xl whitespace-nowrap ">{item.title}</h1>
               <p className="text-gray-400">{item.desc}</p>
             </div>
           </div>
@@ -66,8 +66,8 @@ const page = () => {
       </div>
       
         </div>
-        <div className='flex  items-center app-content2 pb-36 pt-96 px-20 gap-28 bg-white '>
-            <div className='flex flex-col gap-12 max-w-[533px]'>
+        <div className='flex md:flex-col lg:flex-row  items-center app-content2 pb-36 pt-96 md:px-12 lg:px-20 gap-28 bg-white md:mt-56 lg:mt-0 '>
+            <div className='flex flex-col gap-12 lg:max-w-[533px]'>
               <h1 className='text-3xl font-semibold opacity-85'> <span className='text-blue-color'>Lorem Ipsum</span> is simply dummy text of the printing. </h1>
               <h3 className='text-footer_text_grey_color text-lg'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </h3>
               <h3 className='text-footer_text_grey_color text-lg'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens</h3>
@@ -75,7 +75,7 @@ const page = () => {
             </div>
             <Image src='/services/servicesboygirl.jpg' alt="web" width={600} height={200} className='' />
         </div>
-        <div className='flex relative py-36 px-40 justify-around items-center bg-blue-color z-0'>
+        <div className='flex md:flex-col lg:flex-row md:gap-40 lg:gap-0 relative py-36 px-40 justify-around items-center bg-blue-color z-0'>
           <Image src='/services/line1.svg' alt="web" width={190} height={200} className='absolute left-[18rem] top-[-103px] ' />
           <Image src='/services/bell.svg' alt="web" width={150} height={200} className='absolute right-[18rem] top-[-72px] ' />
           <div className='text-center'>
@@ -96,12 +96,12 @@ const page = () => {
           </div>
           <Image src='/services/line2.svg' alt="web" width={190} height={200} className='absolute left-0  bottom-[-12px] '/>
           <Image src='/services/smallplant.svg' alt="web" width={130} height={300} className='absolute rounded-full bottom-[-4rem] left-[25rem] z-10' />
-          <Image src='/services/line3.png' alt="web" width={300} height={300} className='absolute rounded-full top-[-68px] right-[18rem] ' />
+          <Image src='/services/line3.png' alt="web" width={300} height={300} className='absolute rounded-full top-[-68px] right-[18rem] md:hidden lg:block ' />
         </div>
 
-        <div className="flex flex-col gap-24 px-20 pt-48 pb-32 pl-72 ">
+        <div className="flex flex-col gap-24 px-20 pt-48 pb-32 md:pl-12 lg:pl-72 ">
           <h1 className='text-4xl font-medium'>Ourl Latest Projects</h1>
-          <div className='flex  gap-20'>
+          <div className='flex md:grid md:grid-cols-2 lg:flex  md:gap-8 lg:gap-20'>
 
        
         {data2.slice(0,4).map((item, index) => (
